@@ -1,0 +1,42 @@
+*{box-sizing: border-box; margin: 0; padding: 0}
+body{
+    background-color: #000;
+    font-family: 'Jua', sans-serif;
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    margin: 3rem auto 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.line{
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+
+.container h1{
+    color: white;
+    padding: 0 .3rem;
+    font-size: 2rem;
+    animation-name: animation_text;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+    z-index: 2;
+
+}
+
+@keyframes animation_text{
+    from {text-shadow: 0 1px 0px #FF003D;}
+    to {text-shadow: 0 1px 60px #FF003D;}
+}
